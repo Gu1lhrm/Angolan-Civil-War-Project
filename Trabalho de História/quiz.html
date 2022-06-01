@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz about the Angolan Civil War</title>
+
+    <link rel="stylesheet" href="trabalho.css">
+
+    <nav>
+        <button><a href="angolan-civil-war.html">General Information</a></button>
+    </nav>
+
+</head>
+<body>
+    <p>By: Guilherme Mendes, Arthur Choi, and Enzo Pastori</p>
+
+    <form name="quiz" action="" method="get">
+        <ol>
+            <li>
+                <h4> <em>Following World War II, the two superpower nations were ________ and ___________.</em> </h4>
+                <div>
+                    <input type="radio" name="question1" id="question-1-a" value="1A" />
+                    <label for="question-1-a">a) Soviet Union and Britain</label>
+                </div>
+                <div>
+                    <input type="radio" name="question1" id="question-1-b" value="1B" />
+                    <label for="question-1-b">b) U.S. and Soviet Union</label>
+                </div>
+                <div>
+                    <input type="radio" name="question1" id="question-1-c" value="1C" />
+                    <label for="question-1-c">c) U.S. and Japan</label>
+                </div>
+                <div>
+                    <input type="radio" name="question1" id="question-1-d" value="1D" />
+                    <label for="question-1-d">d) Britain and France</label>
+                </div>
+            </li>
+
+            <li>
+                <h4> <em>The Soviet Union expanded its influence into Eastern Europe and a metaphorical “_______” separated the east and west.</em> </h4>
+                <div>
+                    <input type="radio" name="question2" id="question2a" value="2A" />
+                    <label for="question2a">a) Steel Fortress</label>
+                </div>
+                <div>
+                    <input type="radio" name="question2" id="question2b" value="2B" />
+                    <label for="question2b">b) Great Wall</label>
+                </div>
+                <div>
+                    <input type="radio" name="question2" id="question2c" value="2C" />
+                    <label for="question2c">c) Iron Curtain</label>
+                </div>
+                <div>
+                    <input type="radio" name="question2" id="question2d" value="2D" />
+                    <label for="question2d">d) Berlin Wall</label>
+                </div>
+            </li>
+
+            <li>
+                <h4> <em>Prior to gaining independence, most of Africa was controlled by __________ countries.</em> </h4>
+                <div>
+                    <input type="radio" name="question3" id="question3a" value="3A" />
+                    <label for="question3a">a) European</label>
+                </div>
+                <div>
+                    <input type="radio" name="question3" id="question3b" value="3B" />
+                    <label for="question3b">b) East Asian</label>
+                </div>
+                <div>
+                    <input type="radio" name="question3" id="question3c" value="3C" />
+                    <label for="question3c">c) North American</label>
+                </div>
+                <div>
+                    <input type="radio" name="question3" id="question3d" value="3D" />
+                    <label for="question3d">d) South Asian</label>
+                </div>
+            </li>
+
+            <li>
+                <h4> <em>The Cuban Missile Crisis occurred when ...</em> </h4>
+                <div>
+                    <input type="radio" name="question4" id="question4a" value="4A" />
+                    <label for="question4a">a) Cuba attempted to invade the U.S. with the Soviet Union's help.</label>
+                </div>
+                <div>
+                    <input type="radio" name="question4" id="question4b" value="4B" />
+                    <label for="question4b">b) The Soviet Union fired missiles at the U.S. from Cuba.</label>
+                </div>
+                <div>
+                    <input type="radio" name="question4" id="question4c" value="4C" />
+                    <label for="question4c">c) The Soviet Union fired missiles at Cuba.</label>
+                </div>
+                <div>
+                    <input type="radio" name="question4" id="question4d" value="4D" />
+                    <label for="question4d">d) The U.S. learned that the Soviet Union had built missile launching pads in Cuba.</label>
+                </div>
+            </li>
+
+            <li>
+                <h4> <em>Which two groups were divided when India gained independence?</em> </h4>
+                <div>
+                    <input type="radio" name="question5" id="question5a" value="5A" />
+                    <label for="question5a">a) Buddhists and Hindus</label>
+                </div>
+                <div>
+                    <input type="radio" name="question5" id="question5b" value="5B" />
+                    <label for="question5b">b) Muslims and Hindus</label>
+                </div>
+                <div>
+                    <input type="radio" name="question5" id="question5c" value="5C" />
+                    <label for="question5c">c) Communists and Capitalists</label>
+                </div>
+                <div>
+                    <input type="radio" name="question5" id="question5d" value="5D" />
+                    <label for="question5d">d) English-speaking and French-speaking citizens</label>
+                </div>
+            </li>
+
+        <br><button onclick="check()">Enviar</button>
+
+    <script>
+        function check() {
+            var c=0;
+            var q1 = document.quiz.question1.value;
+            if (q1 == "1B") {
+                c++  
+            } 
+            var q2 = document.quiz.question2.value
+            if (q2 == "2C") {
+                c++
+            }
+            var q3 = document.quiz.question3.value
+            if (q3 == "3A") {
+                c++
+            } 
+            var q4 = document.quiz.question4.value
+            if (q4 == "4D") {
+                c++
+            }
+            var q5 = document.quiz.question5.value
+            if (q5 == "5B") {
+                c++
+            }
+
+           if (c == 5) {
+               window.alert("Your final grade is AE")
+           } else if (c == 4) {
+               window.alert("Your final grade is PR")
+           } else if (c == 3) {
+               window.alert("Your final grade is MS")
+           } else if (c == 2) {
+               window.alert("Your final grade is ID")
+           } else {
+               window.alert("Your final grade is NI")
+           }
+        }
+
+    </script>
+</body>
+</html>
